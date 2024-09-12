@@ -1,4 +1,4 @@
-# Handlebars LESS Project
+# Technical Test - CARACOLTV - Santiago Montoya Baiter
 
 This project is a technical test for the Caracol TV Front-End Developer position, created by Santiago Montoya. It demonstrates the use of Handlebars templating engine, LESS CSS preprocessor, and Gulp task runner to create a dynamic web application.
 
