@@ -1,0 +1,20 @@
+<div class="hamburger-menu">
+  <button id="hamburger-button" class="hamburger-menu__button">☰</button>
+  <div class="hamburger-menu__logo">
+    {{#each logo}}
+    <a href="{{href}}" class="hamburger-menu__logo-link">
+      <img src="{{image.src}}" alt="{{alt}}" width="{{image.width}}" height="{{image.height}}"
+        class="hamburger-menu__logo-image" />
+    </a>
+    {{/each}}
+  </div>
+  <nav id="hamburger-nav" class="hamburger-menu__nav hamburger-menu__nav--hidden">
+    <ul class="hamburger-menu__nav-list">
+      {{#each navigation.[0].items}}
+      <li class="hamburger-menu__nav-item">
+        <a href="{{href}}" class="hamburger-menu__nav-link">{{text}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </nav>
+</div>

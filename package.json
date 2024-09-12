@@ -1,0 +1,18 @@
+{
+  "name": "technical-test-for-caracoltv",
+  "version": "1.0.0",
+  "description": "technical test for the Caracol TV Front-End Developer position, created by Santiago Montoya",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "jadensmb",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "cypress": "^13.14.2",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
+}

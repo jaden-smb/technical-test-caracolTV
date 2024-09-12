@@ -1,0 +1,9 @@
+<section class="page-lead">
+  {{#each pageLead}}
+  <picture class="page-lead__picture">
+    <source srcset="{{image.webpSrc}}" type="image/webp">
+    <img src="{{image.src}}" alt="{{alt}}"
+      class="page-lead__image" />
+  </picture>
+  {{/each}}
+</section>

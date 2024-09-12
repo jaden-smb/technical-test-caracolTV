@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="header__content">
+    <button class="show_trend" id="show_trend">Mostrar Tendencias</button>
+    <nav class="header__navigation" id="header-navigation">
+      <ul class="header__navigation-list header__navigation-list--left">
+        <li class="header__navigation-item">Tendencias:</li>
+        {{#each hotTopics}}
+        <li class="header__navigation-item">
+          <a href="{{url}}" target="{{target}}"
+            class="header__navigation-link header__navigation-link--highlight">{{title}} | </a>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="header__social header__social--right">
+        <span class="header__social-text">Síguenos en:</span>
+        {{#each social}}
+        {{#each items}}
+        <a href="{{href}}" class="header__social-link">
+          <img src="{{icon}}" alt="{{socialService}}" class="header__social-icon" />
+        </a>
+        {{/each}}
+        {{/each}}
+      </div>
+    </nav>
+  </div>
+</header>

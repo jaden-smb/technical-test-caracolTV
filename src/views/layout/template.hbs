@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{headline}}</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  {{> menu logo=logo navigation=navigation}}
+  {{> header hotTopics=hotTopics social=social}}
+  {{> pageLead pageLead=pageLead}}
+  {{> main breadcrumbs=breadcrumbs lead=lead headline=headline subHeadline=subHeadline audioPlayer=audioPlayer actions=actions}}
+</body>
+
+</html>

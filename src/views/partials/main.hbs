@@ -1,0 +1,38 @@
+<main class="main-content">
+  <div class="breadcrumbs">
+    {{#each breadcrumbs}}
+    <a href="{{href}}" class="breadcrumbs__link">{{body}}</a>{{#unless @last}} > {{/unless}}
+    {{/each}}
+  </div>
+
+  <div class="main-content__body">
+    <div class="lead">
+      {{#each lead}}
+      <img src="{{image.src}}" alt="{{alt}}" class="lead__image" />
+      {{/each}}
+    </div>
+
+    <article class="article">
+      <h1 class="article__headline">{{headline}}</h1>
+      <h2 class="article__subheadline">{{{subHeadline}}}</h2>
+
+      {{#each audioPlayer}}
+      <div class="article__audio-player">
+        <audio controls>
+          <source src="{{audioUrl}}" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      {{/each}}
+
+      <div class="article__social-actions">
+        <span class="article__social-actions-text">Compartir:</span>
+        {{#each actions}}
+        {{#each items}}
+        <a href="{{shareHref}}" class="article__social-actions-link">{{body}}</a>
+        {{/each}}
+        {{/each}}
+      </div>
+    </article>
+  </div>
+</main>
